@@ -1,0 +1,120 @@
+@media (max-width: 540px) {
+  * {
+    max-width: 100%;
+  }
+
+  .navbar_links {
+    padding-right: 0.5rem;
+  }
+  .navbar_links-link {
+    padding: 0rem 0.5rem;
+  }
+  .navbar_links-link a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .mainart {
+    margin-top: 0;
+  }
+
+  .mailing {
+    width: 60vw;
+  }
+  .mailing_label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mailing_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mailing_form-input {
+    padding: 0px;
+    width: 70%;
+  }
+  .mailing_form-submit {
+    font-size: 1rem;
+  }
+
+  #headlines {
+    width: 100vw;
+  }
+
+  .headlines {
+    width: 100vw;
+    padding: 1.5rem;
+  }
+  .headlines_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headlines_body_imagediv img {
+    width: 80vw;
+  }
+
+  .bio {
+    width: 100vw;
+  }
+  .bio_body {
+    flex-direction: column;
+  }
+  .bio_body_imagediv img {
+    height: 25rem;
+  }
+
+  .music {
+    width: 100vw;
+  }
+  .music_items {
+    flex-direction: column;
+  }
+  .music_items_item_header-image img {
+    width: 9.375rem;
+  }
+  .music_items_item_header_details {
+    padding: 1.25rem;
+  }
+  .music_items_item_header_details-title {
+    font-size: 1.25rem;
+  }
+
+  .store {
+    width: 100vw;
+  }
+  .store_link {
+    width: 80vw;
+    font-weight: 500;
+    padding: 1.5rem;
+  }
+
+  .tunes {
+    width: 100vw;
+    padding: 2.5rem;
+  }
+  .tunes_contain_album {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .tunes_contain_album-image img {
+    width: 80vw;
+  }
+  .tunes_contain_album_info-title {
+    font-size: 2rem;
+  }
+  .tunes_contain_album_info_links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .tunes_contain_album_info_links-link-buy {
+    padding: 0.625rem 1.25rem;
+  }
+  .tunes_contain_album_info_links-link-bc {
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+  }
+}

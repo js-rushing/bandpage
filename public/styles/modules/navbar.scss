@@ -1,0 +1,31 @@
+.navbar {
+    background-color: $brown;
+    color: $rose;
+    position: fixed;
+    top: 0px;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+
+    &_links {
+        display: flex;
+        flex-direction: row;
+        padding-right: 1.25rem;
+
+        &-link {
+            list-style: none;
+            padding: 0rem .75rem;
+
+            a {
+                font-family: $linkFont, sans-serif;
+                font-size: 1.25rem;
+                text-decoration: none;
+                color: $orangeLite;
+            }
+        }
+    }
+}

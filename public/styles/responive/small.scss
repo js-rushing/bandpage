@@ -1,0 +1,165 @@
+@media (max-width: 540px) {
+    * {
+        max-width: 100%;
+    }
+
+    .navbar {
+        &_links {
+            padding-right: .5rem;
+
+            &-link {
+                padding: 0rem .5rem;
+
+                a {
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .mainart {
+        margin-top: 0;
+    }
+
+    .mailing {
+        width: 60vw;
+
+        &_label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &-input {
+                padding: 0px;
+                width: 70%;
+            }
+
+            &-submit {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #headlines {
+        width: 100vw;
+    }
+
+    .headlines {
+        width: 100vw;
+        padding: 1.5rem;
+
+
+        &_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_imagediv {
+                img {
+                    width: 80vw;
+                }
+            }
+        }
+    }
+
+    .bio {
+        width: 100vw;
+
+        &_body {
+            flex-direction: column;
+
+            &_imagediv {
+                img {
+                    height: 25rem;
+                }
+            }
+        }
+    }
+
+    .music {
+        width: 100vw;
+
+        &_items {
+            flex-direction: column;
+
+            &_item {
+                &_header {
+                    &-image {
+                        img {
+                            width: 9.375rem;
+                        }
+                    }
+
+                    &_details {
+                        padding: 1.25rem;
+
+                        &-title {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .store {
+        width: 100vw;
+
+        &_link {
+            width: 80vw;
+            font-weight: 500;
+            padding: 1.5rem;
+        }
+    }
+
+    .tunes {
+        width: 100vw;
+        padding: 2.5rem;
+
+        &_contain {
+
+            &_album {
+                flex-direction: column;
+
+                width: 100vw;
+
+                &-image {
+                    img {
+                        width: 80vw;
+                    }
+                }
+
+                &_info {
+
+                    &-title {
+                        font-size: 2rem;
+                    }
+
+                    &_links {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-top: 1rem;
+
+                        &-link {
+                            &-buy {
+                                padding: .625rem 1.25rem;
+                            }
+
+                            &-bc {
+                                margin-left: 0rem;
+                                margin-top: .5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

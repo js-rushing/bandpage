@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Oswald:wght@200;400;600;700&display=swap');
+
+// COLORS
+$orangeLite: #f29f05;
+$orangeMed: #f28705;
+$orangeDark: #f25C05;
+$brown: #732A10;
+$brownDark: #3f1709;
+$rose: #F23D3D;
+
+// FONTS
+$linkFont: 'Oswald',
+sans-serif;
+$labelFont: 'Oswald',
+sans-serif;
+$labelFontSize: 2.5rem;
+$bodyFont: 'Cabin',
+sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $orangeLite;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.label {
+    color: $brown;
+    font-weight: 700;
+}
+
+.btn {
+    cursor: pointer;
+    user-select: none;
+
+    &:active {
+        transform: translateX(1px) translateY(1px);
+        box-shadow: inset 2px 2px 5px rgba(40, 40, 40, .5);
+    }
+}

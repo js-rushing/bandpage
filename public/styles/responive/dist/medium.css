@@ -1,0 +1,17 @@
+@media (max-width: 801px) {
+  .mailing {
+    width: 80vw;
+  }
+  .mailing_label {
+    font-size: 1.25rem;
+  }
+
+  .store_link {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1100px) {
+  .mainart {
+    margin-top: -10vh;
+  }
+}

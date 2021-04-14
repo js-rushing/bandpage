@@ -1,0 +1,219 @@
+@media (max-width: 319px) {
+    * {
+        max-width: 100%;
+    }
+
+    .navbar {
+        height: 8vh;
+
+        &_links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: .25rem;
+            padding-right: .25rem;
+
+            &-link {
+                padding: 0rem;
+
+                a {
+                    font-size: .8rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .mailing {
+        transform: translateX(-5px);
+
+        &_form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-input {
+                padding: 0px;
+                width: 80vw;
+            }
+
+            &-submit {
+                text-align: center;
+                font-size: 1rem;
+                margin-top: .5rem;
+                width: 80vw;
+            }
+        }
+    }
+
+    .headlines {
+        padding: 1.25rem;
+    }
+
+    .bio {
+        padding: 1.25rem;
+    }
+
+    .music {
+        padding: 1.25rem;
+
+        &_items {
+
+            &_item {
+                &_header {
+                    flex-direction: column;
+
+                    &-image {
+                        img {
+                            width: 80vw;
+                        }
+                    }
+
+                    &_details {
+                        padding: .625rem;
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .store {
+        padding: 1.25rem;
+        width: 100vw;
+
+        &_link {
+            width: 80vw;
+            font-weight: 400;
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+
+    .tunes {
+        width: 100vw;
+        padding: 1.25rem;
+
+        &_contain {
+
+            &_album {
+                &-image {
+                    img {
+                        width: 85vw;
+                    }
+                }
+
+                &_info {
+                    &-title {
+                        font-size: 1.5rem;
+                    }
+
+                    &_links {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-top: 1rem;
+
+                        &-link {
+                            &-buy {
+                                padding: .625rem 1.25rem;
+                            }
+
+                            &-bc {
+                                margin-left: 0rem;
+                                margin-top: .5rem;
+
+                                #follow-on {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_player {
+                &_current {
+                    &_info {
+                        flex-direction: column;
+                        padding: 0rem;
+
+                        &_left {
+                            width: 100%;
+                            justify-content: space-between;
+
+                            &_details {
+                                margin-left: 0rem;
+
+                                &-title {
+                                    font-size: 1rem;
+                                    font-weight: 500;
+                                }
+
+                                &-bandname {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &_right {
+                            width: 100%;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin-top: .5rem;
+
+                            &_controls {
+                                display: flex;
+                                justify-content: space-evenly;
+                                width: 30%;
+
+                                #reverse {
+                                    transform: translateX(-2px);
+                                }
+
+                                #forward {
+                                    transform: translateX(2px);
+                                }
+
+                                i {
+                                    font-size: .9rem;
+                                    border-radius: 3.125rem;
+                                    background-color: $brownDark;
+                                    color: $orangeLite;
+                                    padding: .85rem;
+                                }
+                            }
+
+                            &_time {
+                                &-current {
+                                    margin-right: .0625rem;
+                                }
+
+                                &-total {
+                                    font-weight: 500;
+                                    margin-left: .0625rem;
+                                }
+                            }
+                        }
+                    }
+
+                    &_progress {
+                        height: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 8vh;
+
+        &_links {
+
+            &-link {
+                i {
+                    font-size: 1.05rem;
+                }
+            }
+        }
+    }
+}

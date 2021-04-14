@@ -1,0 +1,101 @@
+@media (max-width: 320px) {
+  * {
+    max-width: 100%;
+  }
+
+  .navbar {
+    height: 8vh;
+  }
+  .navbar_links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .navbar_links-link {
+    padding: 0rem;
+  }
+  .navbar_links-link a {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .mailing {
+    transform: translateX(-5px);
+  }
+  .mailing_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mailing_form-input {
+    padding: 0px;
+    width: 80vw;
+  }
+  .mailing_form-submit {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    width: 80vw;
+  }
+
+  .headlines {
+    padding: 1.25rem;
+  }
+
+  .bio {
+    padding: 1.25rem;
+  }
+
+  .music {
+    padding: 1.25rem;
+  }
+  .music_items_item_header {
+    flex-direction: column;
+  }
+  .music_items_item_header-image img {
+    width: 80vw;
+  }
+  .music_items_item_header_details {
+    padding: 0.625rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .store {
+    padding: 1.25rem;
+    width: 100vw;
+  }
+  .store_link {
+    width: 80vw;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .tunes {
+    width: 100vw;
+    padding: 1.25rem;
+  }
+  .tunes_contain_album-image img {
+    width: 85vw;
+  }
+  .tunes_contain_album_info-title {
+    font-size: 1.5rem;
+  }
+  .tunes_contain_album_info_links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .tunes_contain_album_info_links-link-buy {
+    padding: 0.625rem 1.25rem;
+  }
+  .tunes_contain_album_info_links-link-bc {
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+  }
+  .tunes_contain_album_info_links-link-bc #follow-on {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+    background-color: $brown;
+    position: fixed;
+    bottom: 0px;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+
+    &_links {
+        display: flex;
+        flex-direction: row;
+        padding-right: .75rem;
+
+        &-link {
+            list-style: none;
+            padding: 0rem .75rem;
+
+            a {
+                text-decoration: none;
+                color: $orangeLite;
+            }
+
+            i {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

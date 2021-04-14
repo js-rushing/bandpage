@@ -1,0 +1,234 @@
+#tunes {
+    background-color: $orangeDark;
+    width: 100vw;
+}
+
+
+.tunes {
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 50rem;
+    padding: 2.5rem;
+    padding-bottom: 20vh;
+
+    &_contain {
+        &_label {
+            font-family: $labelFont;
+            font-size: $labelFontSize;
+        }
+
+        &_album {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+
+            width: 50rem;
+
+            &-image {
+                img {
+                    width: 12.5rem;
+                }
+            }
+
+            &_info {
+                padding: 1.25rem;
+                font-family: $bodyFont;
+                color: $brownDark;
+
+                &-title {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+
+                &-bandname {
+                    font-size: 1.25rem;
+                }
+
+                &_links {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 1.25rem;
+
+                    #view-on-bandcamp {
+                        margin-left: .3125rem;
+                    }
+
+                    &-link {
+                        &-buy {
+                            background-color: $brown;
+                            color: $orangeLite;
+                            padding: .625rem 1.25rem;
+                            border-radius: 1.25rem;
+                        }
+
+                        &-bc {
+                            background-color: $orangeMed;
+                            margin-left: 2rem;
+                            padding: .625rem 1.25rem;
+                            border-radius: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_player {
+            &_current {
+                &_info {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding: .625rem;
+                    color: $brownDark;
+
+                    &_left {
+                        display: flex;
+                        flex-direction: row;
+
+                        #play-icon {
+                            transform: translateX(.125rem) translateY(-0.0625rem);
+                        }
+
+                        &-playbutton {
+                            background-color: $brownDark;
+                            color: $orangeLite;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            border-radius: 3.125rem;
+                        }
+
+                        &_details {
+                            font-family: $bodyFont;
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: .625rem;
+
+                            &-title {
+                                font-size: 1.25rem;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                            }
+
+                            &-bandname {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    &_right {
+                        display: flex;
+                        flex-direction: column;
+
+                        &_controls {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 4.375rem;
+
+                            i {
+                                cursor: pointer;
+                                user-select: none;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 1.5625rem;
+                                width: 1.5625rem;
+                                border-radius: 3.125rem;
+                            }
+                        }
+
+                        &_time {
+                            display: flex;
+                            flex-direction: row;
+                            font-family: $bodyFont;
+
+                            &-current {
+                                font-weight: 500;
+                                margin-right: .0625rem;
+                            }
+
+                            &-total {
+                                font-weight: 600;
+                                margin-left: .0625rem;
+                            }
+                        }
+                    }
+                }
+
+                &_progress {
+                    position: relative;
+                    width: 100%;
+                    height: .625rem;
+                    margin-top: .3125rem;
+                    border-radius: .3125rem;
+                    overflow: hidden;
+
+                    &-background {
+                        position: absolute;
+                        background-color: $brownDark;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                    }
+
+                    &-foreground {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: $orangeLite;
+                        width: 0%;
+                        height: 100%;
+                        z-index: 3;
+                        transition: all 1s;
+                    }
+                }
+            }
+
+            &_songs {
+                &_item {
+                    &_info {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: baseline;
+                        padding: 1.25rem 0rem .625rem 0rem;
+                        font-family: $bodyFont;
+
+                        &-number {
+                            margin-left: .3125rem;
+                            font-weight: 600;
+                        }
+
+                        &-title {
+                            margin-left: .625rem;
+                            text-transform: capitalize;
+                            cursor: pointer;
+                        }
+
+                        &-time {
+                            margin-left: .625rem;
+                        }
+                    }
+
+                    &_line {
+                        height: .0625rem;
+                        width: 100%;
+                        background-color: $brownDark;
+                        opacity: .3;
+                    }
+                }
+            }
+
+            #speaker-icon {
+                width: .9375rem;
+            }
+        }
+    }
+}

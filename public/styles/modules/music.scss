@@ -1,0 +1,50 @@
+#music {
+    background-color: $orangeDark;
+    width: 100vw;
+}
+
+.music {
+    margin: auto;
+    margin-top: 5vh;
+    width: 50rem;
+    padding: 2.5rem;
+
+    &_label {
+        font-family: $labelFont;
+        font-size: $labelFontSize;
+    }
+
+    &_items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: $bodyFont;
+
+        &_item {
+
+            &_header {
+                display: flex;
+                flex-direction: row;
+
+                &-image {
+                    img {
+                        width: 12.5rem;
+                    }
+                }
+
+                &_details {
+                    padding: 1.25rem;
+
+                    &-title {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                    }
+
+                    &-bandname {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

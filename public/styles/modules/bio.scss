@@ -1,0 +1,33 @@
+.bio {
+    margin: auto;
+    margin-top: 5vh;
+    width: 50rem;
+    padding: 2.5rem;
+
+    &_label {
+        font-family: $labelFont;
+        font-size: $labelFontSize;
+    }
+
+    &_body {
+        display: flex;
+        flex-direction: row;
+
+        &_imagediv {
+            img {
+                height: 25rem;
+            }
+        }
+
+        &_text {
+            padding: 1.25rem;
+            font-size: 1.1rem;
+            font-family: $bodyFont;
+            color: $brownDark;
+
+            p {
+                margin: 1.25rem 0rem;
+            }
+        }
+    }
+}

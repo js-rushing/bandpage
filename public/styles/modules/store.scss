@@ -1,0 +1,28 @@
+.store {
+    margin: auto;
+    margin-top: 5vh;
+    width: 50rem;
+    padding: 2.5rem;
+
+    &_label {
+        font-family: $labelFont;
+        font-size: $labelFontSize;
+    }
+
+    &_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 2.5rem;
+        width: 25rem;
+        background-color: $brown;
+        color: $orangeLite;
+        font-family: $linkFont;
+        font-weight: 600;
+        padding: 2rem;
+        border-radius: 2.5rem;
+        cursor: pointer;
+        user-select: none;
+    }
+}
